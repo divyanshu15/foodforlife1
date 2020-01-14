@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css\index.css">
+	<link rel="stylesheet" type="text/css" href="css\modellogin.css">
+	<link rel="stylesheet" type="text/css" href="css\form.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+	<div class="main">
+<div class="menu-bar">
+	<img class="logo" src="logo.png">
+	<ul>
+
+		<li ><a href="#">
+		 Home</a></li>
+		<li ><a href="#">about</a></li>
+		<li><a href="#">Blog</a></li>
+		<li> <a href="#">Content</a></li>
+		<li><a href="#modal" class="modal-open">Login</a></li>
+		<div class="modal" id="modal">
+    <div class="modal__content">
+      <a href="#" class="modal__close">&times;</a>
+      <div class="center">
+      <h1 class="modelformheader">LOGIN</h1>
+      <form>
+		<input type="text" placeholder="Email or Username">
+		<i class="far fa-envelope"></i>
+		<input id="pswrd" type="password" placeholder="Password">
+		<i class="fas fa-lock" onclick="show()"></i>
+		<input type="submit" value="Sign in">
+		<a href="#">Forgot Password?</a>
+	</form>
+</div>
+    </div>
+ </div>
+	</ul>
+</div>
+</div>
+</body>
+</html>

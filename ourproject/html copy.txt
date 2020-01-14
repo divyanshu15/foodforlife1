@@ -1,0 +1,55 @@
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+	<div id="id01" class="modal">
+		
+		<span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">+</span>
+<form class="modal-content" id="su">
+	
+
+			<h2>SIGN UP</h2>
+
+			<input type="text" placeholder="Username">
+			
+			<input type="text" placeholder="Email_id">
+			<input type="Password" placeholder="Password">
+			<input type="Password" placeholder="RePassword">
+			<button>Signup</button>
+			<p class="message">Already Registered?<a href="#" onclick="Signin()">Login</a></p>
+			
+		</form>
+		<form class="modal-content" id="lg">
+			<h2>SIGN IN</h2>
+			<input type="text" placeholder="Username">
+			<input type="Password" placeholder="Password">
+			
+			<button>Signin</button>
+			<p class="message" id="signup">Not Registered?<a href="#" onclick="signup()">Signup</a></p>
+			</form>
+		
+		</script>
+            <script>
+            	$('.message a').click(function(){
+            		$('.div form').animate({height:"toggle", opacity:"toggle"},"slow");
+
+				});
+				function signup()
+				{
+					document.getElementById('lg').style.display='none';
+					document.getElementById('su').style.display='block';
+		
+				}
+
+				function Signin()
+				{
+					document.getElementById('lg').style.display='block';
+					document.getElementById('su').style.display='none';
+		
+				}
+				
+
+				
+				
+					
+
+				
+		</script>
